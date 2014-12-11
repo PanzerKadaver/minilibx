@@ -57,4 +57,7 @@ clean :
 fclean: clean
 	$(RM) $(BIN)
 
+debug: CFLAGS += -g
+debug: re
+
 re: fclean all
